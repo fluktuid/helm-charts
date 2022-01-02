@@ -1,0 +1,21 @@
+apiVersion: v1
+entries:
+  openldap:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-01-02T14:11:27.402170035Z"
+    description: Open implementation of the ldap standard
+    digest: a0afe5f14cf0dfa719bb71994b9d36606ae513809b6a4e958278dfe2fe3eeb83
+    home: https://www.openldap.org
+    icon: http://www.openldap.org/images/headers/LDAPworm.gif
+    keywords:
+    - ldap
+    - openldap
+    name: openldap
+    sources:
+    - https://github.com/fluktuid/helm-charts
+    type: application
+    urls:
+    - https://github.com/fluktuid/helm-charts/releases/download/openldap-0.1.0/openldap-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-01-02T14:11:27.180983336Z"
