@@ -1,0 +1,7 @@
+
+env:
+  LDAP_ORGANISATION: "Hibiscus"
+  LDAP_DOMAIN: "fluktuid.com"
+
+persistence:
+  enabled: true
