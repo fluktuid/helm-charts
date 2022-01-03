@@ -1,6 +1,6 @@
 apiVersion: v2
 name: openldap
-description: Open implementation of the ldap standard
+description: Open implementation of the ldap standard based on osixia/docker-openldap
 home: https://www.openldap.org
 icon: http://www.openldap.org/images/headers/LDAPworm.gif
 keywords:
@@ -26,10 +26,14 @@ version: 0.1.0
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
-appVersion: "1.16.0" #todo: correct me
+appVersion: "2.4.57"
 
 #maintainers:
 #- email: enis@apache.org
 #  name: enis
 sources:
 - https://github.com/fluktuid/helm-charts
+
+maintainers:
+  - name: Lukas Paluch
+    url: https://github.com/fluktuid/

@@ -15,7 +15,7 @@ spec:
     spec:
       initContainers:
       - name: lookup-{{ template "openldap.fullname" . }}
-        image: busybox:1.28
+        image: "{{ .Values.initJob.initImage.lookup.repository }}:{{ .Values.initJob.initImage.lookup.tag }}"
         command: ['sh', '-c', 'until nslookup {{ template "openldap.fullname" . }}.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local; do echo waiting for ldap; sleep 2; done']
       - name: wait-ready-{{ template "openldap.fullname" . }}
         image: "{{ .Values.initJob.image.repository }}:{{ .Values.initJob.image.tag }}"

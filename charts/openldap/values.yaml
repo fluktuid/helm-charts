@@ -10,6 +10,10 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "1.5.0"
 initJob:
+  initImage:
+    lookup:
+      repository: busybox
+      tag: "1.28"
   image:
     repository: osixia/openldap
     pullPolicy: IfNotPresent
@@ -66,16 +70,16 @@ initialData: []
 #   mail: bjensen@example.com
 #   uid: bjensen
 
-initialData:
-- |
-  dn: cn=Barbara Jensen,dc=example,dc=com
-  objectClass: person
-  cn: Barbara Jensen
-  cn: Babs Jensen
-  sn: Jensen
-  title: the world's most famous mythical manager
-  mail: bjensen@example.com
-  uid: bjensen
+initialData: []
+#- |
+#  dn: cn=Barbara Jensen,dc=example,dc=com
+#  objectClass: person
+#  cn: Barbara Jensen
+#  cn: Babs Jensen
+#  sn: Jensen
+#  title: the world's most famous mythical manager
+#  mail: bjensen@example.com
+#  uid: bjensen
 
 env:
   LDAP_ORGANISATION: "Example Inc."
